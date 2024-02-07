@@ -1,0 +1,9 @@
+nameserver: 8.8.8.8
+record:
+  domain: example.com
+  subdomain: ""
+  ttl: "600"
+  subdomainid: ""
+apicredentials:
+  apikey: "replace with valid key"
+  apisecret: "replace with valid key"
