@@ -9,15 +9,15 @@ import (
 )
 
 type Config struct {
-	NameServer     string `yaml:"nameserver" envconfig:"NAMESERVER"`
-    ApiKeyFile     string `envconfig:"API_KEY_FILE"`
-	ApiSecretFile  string `envconfig:"API_SECRET_FILE"`
-    Record struct {
-        Domain string `yaml:"domain" envconfig:"DOMAIN"`
-        Subdomain string `yaml:"subdomain" envconfig:"SUBDOMAIN"`
-        TTL string `yaml:"ttl" envconfig:"TTL"`
-        Id  string `yaml:"subdomainid" envconfig:"SUBDOMAIN_ID"`
-    } `yaml:"record"`
+	NameServer    string `yaml:"nameserver" envconfig:"NAMESERVER"`
+	ApiKeyFile    string `envconfig:"API_KEY_FILE"`
+	ApiSecretFile string `envconfig:"API_SECRET_FILE"`
+	Record        struct {
+		Domain    string `yaml:"domain" envconfig:"DOMAIN"`
+		Subdomain string `yaml:"subdomain" envconfig:"SUBDOMAIN"`
+		TTL       string `yaml:"ttl" envconfig:"TTL"`
+		Id        string `yaml:"subdomainid" envconfig:"SUBDOMAIN_ID"`
+	} `yaml:"record"`
 	ApiCredentials struct {
 		ApiKey string `yaml:"apikey" envconfig:"API_KEY"`
 		Secret string `yaml:"apisecret" envconfig:"API_SECRET"`
