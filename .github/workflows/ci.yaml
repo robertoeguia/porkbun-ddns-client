@@ -20,8 +20,8 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
-      - make: Lint
-        run: make lint
-      
       - name: Build
         run: make
+
+      - name: Lint
+        run: make lint
