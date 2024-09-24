@@ -30,6 +30,9 @@ GOLANGCI_LINT = $(LOCALBIN)/golangci-lint-$(GOLANGCI_LINT_VERSION)
 
 GOLANGCI_LINT_VERSION ?= v1.57.2
 
+.PHONY: all
+all: build
+
 .PHONY: fmt
 fmt: ## Run go fmt against code
 	go fmt ./...
