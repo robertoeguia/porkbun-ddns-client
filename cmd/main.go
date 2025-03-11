@@ -12,7 +12,7 @@ import (
 
 const (
 	ipv4hostname = "https://api-ipv4.porkbun.com/api/json/v3"
-	apiHostname  = "https://porkbun.com/api/json/v3"
+	apiHostname  = "https://api.porkbun.com/api/json/v3"
 )
 
 type porkbunUpdateRecord struct {
